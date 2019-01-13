@@ -4,6 +4,11 @@ alias(
     actual = "//src/scala/com/github/johnynek/bazel_deps:parseproject"
 )
 
+alias(
+    name = "parse_deploy",
+    actual = "//src/scala/com/github/johnynek/bazel_deps:parseproject_deploy.jar"
+)
+
 load("@io_bazel_rules_scala//scala:scala_toolchain.bzl", "scala_toolchain")
 
 scala_toolchain(
